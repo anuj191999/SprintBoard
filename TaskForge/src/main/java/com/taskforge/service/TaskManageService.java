@@ -17,10 +17,7 @@ import java.util.List;
 @Slf4j
 public class TaskManageService {
 
-    private TaskRepository taskRepository;
-    public TaskManageService(TaskRepository taskRepository) {
-        this.taskRepository = taskRepository;
-    }
+    private final TaskRepository taskRepository;
 
     public void createTask(TaskRequestDto task) {
         Item item=Item.builder().

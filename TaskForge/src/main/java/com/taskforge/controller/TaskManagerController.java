@@ -20,25 +20,25 @@ public class TaskManagerController {
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public void addTask(@RequestBody TaskRequestDto taskRequestDto) {
-
+        this.taskManageService.createTask(taskRequestDto);
     }
 
     @PutMapping
     @ResponseStatus(HttpStatus.OK)
     public void updateTask(@RequestBody TaskRequestDto taskRequestDto) {
-
+        this.taskManageService.updateTask(taskRequestDto);
     }
 
     @DeleteMapping
     @ResponseStatus(HttpStatus.OK)
     public void deleteTask(@RequestParam(required = true) String taskId) {
-
+        this.taskManageService.deleteTask(taskId);
     }
 
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
     public List<TaskResponseDto> getTasks(@RequestParam(required = false) String userId) {
-        return null;
+        return this.taskManageService.getAllTask(userId);
     }
 
 }
