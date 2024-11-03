@@ -3,13 +3,12 @@ package com.taskforge.service;
 import com.taskforge.dto.TaskRequestDto;
 import com.taskforge.dto.TaskResponseDto;
 import com.taskforge.model.Item;
-import com.taskforge.repositorty.TaskRepository;
+import com.taskforge.repository.TaskRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 @Service

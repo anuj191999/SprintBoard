@@ -1,4 +1,4 @@
-package com.taskforge.repositorty;
+package com.taskforge.repository;
 
 import com.taskforge.model.Item;
 import org.springframework.data.mongodb.repository.MongoRepository;
